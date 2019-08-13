@@ -24,32 +24,35 @@ yargs.command({
         notes.addNote(argv.title, argv.body);
     }
 })
-// yargs.command({
-//     command: 'remove',
-//     describe: 'Removing a note',
-//     handler: () => {
-//         console.log('Removing a note');
-//     }
-// })
+// Create remove command
+yargs.command({
+    command: 'remove',
+    describe: 'Removing a note',
+    handler: () => {
+        console.log('Removing a note');
+    }
+})
 
-// yargs.command({
-//     command: 'list',
-//     describe: 'Listing a note',
-//     handler: () => {
-//         console.log('listing out all the note');
-//     }
+// Create list command
+yargs.command({
+    command: 'list',
+    describe: 'Listing a note',
+    handler: () => {
+        console.log('listing out all the note');
+    }
 
-// })
+})
 
-// yargs.command({
-//     command: 'read',
-//     describe: 'Reading all the notes',
-//     handler: () => {
-//         console.log('Reading all the note');
-//     }
-// })
+// Create read command
+yargs.command({
+    command: 'read',
+    describe: 'Reading all the notes',
+    handler: () => {
+        console.log('Reading all the note');
+    }
+})
 
 
 
 
-//yargs.parse();
+yargs.parse();
