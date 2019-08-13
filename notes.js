@@ -15,8 +15,10 @@ const addNote = function (title, body) {
             body: body
         });
         saveNotes(notes);
+        console.log('New notes added ! ');
+    } else {
+        console.log('Note title taken ');
     }
-
 }
 
 const saveNotes = function (notes) {
@@ -34,8 +36,27 @@ const loadNotes = function () {
     }
 
 }
+const removeNote = function (title) {
+    const notes = loadNotes();
+    const result = notes.filter(function (note) {
+        return note.title === title
+    });
+    console.log('my result sir ', result);
+
+
+    // notes.filter(function (note) {
+    //     console.log(note.title)
+    // return note.title === title;
+
+    // })
+
+
+
+
+}
 module.exports = {
     getNotes: getNotes,
     addNote: addNote,
-    loadNotes: loadNotes
+    removeNote: removeNote
+    // loadNotes: loadNotes
 }
