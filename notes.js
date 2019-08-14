@@ -55,9 +55,14 @@ const listNotes = () => {
     });
 }
 
+const readNotes = () => {
+
+}
+
 module.exports = {
     getNotes: getNotes,
     addNote: addNote,
     removeNote: removeNote,
-    listNotes: listNotes
+    listNotes: listNotes,
+    readNotes: readNotes
 }
